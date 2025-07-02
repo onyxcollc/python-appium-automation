@@ -13,7 +13,7 @@ desired_capabilities = {
     "appActivity": "org.wikipedia.main.MainActivity",
     "appPackage": "org.wikipedia",
     # Put your path below:
-    "app": ".../mobile_app/wikipedia.apk"
+    "app":"C:/Users/nicko/python-appium-automation/mobile_app/wikipedia.apk"
 }
 
 appium_server_url = 'http://localhost:4723'
@@ -33,7 +33,7 @@ driver.find_element(AppiumBy.ID, 'org.wikipedia:id/search_src_text').send_keys('
 
 # Verification
 expected_result = 'Python (programming language)'
-actual_result = driver.find_element(AppiumBy.ID, 'org.wikipedia:id/page_list_item_title').text
+actual_result = driver.find_element(AppiumBy.XPATH, "//*[@text='Python (programming language)']").text
 
 assert actual_result == expected_result, f'Expected {expected_result} did not match actual {actual_result}'
 
