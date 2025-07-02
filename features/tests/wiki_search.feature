@@ -19,3 +19,12 @@ Scenario: User can search on Wikipedia
     When Click Search icon
     And Search for Jesus Christ
     Then Verify first result is Jesus Christ
+
+
+ Scenario: User can search on Wikipedia
+    Given Click to Skip onboarding
+    When Click Search icon
+    And Search for Africa
+    Then Verify first result is Africa
+
+
