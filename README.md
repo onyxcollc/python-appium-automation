@@ -39,6 +39,9 @@ All UI elements are dynamically located using **Appium Inspector**, and test flo
 | Appium Inspector | Element inspection and locator validation    |
 | POM (Design)     | Code reusability & maintainability           |
 
+Appium setup instructions are [here](https://docs.google.com/document/d/1d8uaQW4R4MPP1XMDiUH8B3VjzgDYQo1oAkQ_oeS4qwk/edit#).
+
+
 ---
 
 <details>
