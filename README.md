@@ -28,7 +28,8 @@ Android Studio	Emulator/device management
 Appium Inspector	Element inspection and locator validation
 POM (Design)	Code reusability & maintainability
 
-📁 Framework Structure
+<details>
+<summary>📁 Framework Structure</summary>
 bash
 Copy
 Edit
