@@ -38,20 +38,7 @@ Android Studio (Device Manager, Emulator)
 
 Appium Inspector
 
-Pytest (for any future integration, if desired)
 
-📂 Folder Structure (Example)
-Copy
-Edit
-project-root/
-├── features/
-│   ├── steps/
-│   ├── pages/
-│   ├── environment.py
-│   └── search_wikipedia.feature
-├── screenshots/
-├── requirements.txt
-└── README.md
 🛠 Setup & Execution
 Clone the repo
 
