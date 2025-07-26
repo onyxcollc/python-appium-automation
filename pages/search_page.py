@@ -4,7 +4,7 @@ from pages.base_page import Page
 
 
 class SearchPage(Page):
-    SEARCH_FIELD = (AppiumBy.ID, 'org.wikipedia:id/search_src_text')
+    SEARCH_FIELD = (AppiumBy.XPATH,"//android.widget.AutoCompleteTextView[@resource-id='org.wikipedia:id/search_src_text']")
     SEARCH_RESULT = (AppiumBy.XPATH, "//*[contains( @text, '{SUBSTR}')]")
 
 
@@ -13,9 +13,11 @@ class SearchPage(Page):
 
     def input_search_text(self, search_text):
         self.input(search_text, *self.SEARCH_FIELD)
+        self.driver.save_screenshot('screenshots/03_search_text.png')
+
 
     def verify_search_result(self, expected_text):
         locator = self._get_search_result_locator(expected_text)
         self.wait_for_element_appear(*locator)
-
+        self.driver.save_screenshot('screenshots/04_search_result.png')
 

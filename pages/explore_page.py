@@ -8,3 +8,4 @@ class ExplorePage(Page):
 
     def click_search_icon(self):
         self.click(*self.SEARCH_ICON)
+        self.driver.save_screenshot('screenshots/02_search_icon.png')

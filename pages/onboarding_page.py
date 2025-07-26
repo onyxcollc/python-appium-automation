@@ -8,3 +8,4 @@ class OnboardingPage(Page):
 
     def click_skip_ob(self):
         self.click(*self.SKIP_BTN)
+        self.driver.save_screenshot('screenshots/01_onboarding.png')
