@@ -1,64 +1,81 @@
-📱 Python-Appium-Automation
-This project is a mobile test automation framework designed for testing native Android applications, specifically demonstrated using the Wikipedia Android app.
+📱 Wikipedia Android App – Mobile Test Automation Framework
+🔧 Project Summary
+This project showcases a mobile native app automation framework built using Python, Appium, and Behave (BDD). The automation targets the Wikipedia Android application, focusing on validating its search functionality through end-to-end test flows.
 
-🔍 What I Did
-I successfully tested the search functionality of the Wikipedia app by developing automated test cases that validated user interactions, navigation, and search behavior within the app.
+The framework is designed using the Page Object Model (POM) architecture for clean code organization and scalability. Tests were executed on Android Studio emulators and validated using Appium Inspector to ensure locator reliability and test robustness.
 
-🚀 Key Features
-Python + Appium based mobile automation framework
+✅ What I Accomplished
+✅ Built a mobile automation framework from scratch using Python + Appium + Behave
 
-BDD with Behave for readable and collaborative test cases using Gherkin syntax
+✅ Successfully tested the search functionality of the Wikipedia app
 
-Page Object Model (POM) structure for scalable and maintainable code
+✅ Created dynamic and reusable Page Objects for core screens and UI components
 
-Executed tests on real and emulated Android devices via Android Studio
+✅ Integrated BDD Gherkin scenarios to validate user interactions and app behavior
 
-Used Appium Inspector for identifying and validating mobile UI elements
+✅ Practiced using Appium Inspector to locate mobile elements dynamically
 
-Implemented reusable components for UI actions and validations
+✅ Validated test cases using real and emulated Android devices
 
-Validated:
+🧪 Tools & Technologies
+Tool	Purpose
+Python	Test scripting
+Appium	Mobile automation driver
+Behave (BDD)  Writing readable test cases
+Android Studio	Emulator/device management
+Appium Inspector	Element inspection and locator strategy
+POM (Design)	Code reusability & maintainability
 
-Login flows
+📁 Framework Structure
+python-appium-automation/
+│
+├── app/                         # App-level utilities (optional/expandable)
+│
+├── features/                   # Behave BDD folder
+│   ├── steps/                  # Step definitions
+│   └── tests/                  # Feature files & environment
+│       ├── wiki_search.feature
+│       ├── environment.py
+│       └── __init__.py
+│
+├── mobile_app/                 # Driver/session management
+│
+├── pages/                      # Page Object classes
+│
+├── screenshots/                # Saved screenshots during test runs
+│
+├── appium_script.py            # Main test runner or utility script
+├── .gitignore
+└── README.md
 
-UI interactions (e.g., clicking, typing, swiping)
-
-Navigation between native screens
-
-Functional behavior of the search feature in Wikipedia
-
-🧪 Technologies Used
-
-
-Python
-
-Appium
-
-Behave (BDD)
-
-Android Studio (Device Manager, Emulator)
-
-Appium Inspector
-
-
-🛠 Setup & Execution
-Clone the repo
-
-Set up a virtual environment and install dependencies:
+  Scenario: User can search on Wikipedia
+    Given Click to Skip onboarding
+    When Click Search icon
+    And Search for "Python (programming language)"
+    Then Verify first result is "Python (programming language"
+▶️ How to Run the Tests
+🔧 Install Dependencies
 
 bash
 Copy
 Edit
 pip install -r requirements.txt
-Launch Android Emulator via Android Studio
+📱 Start Android Emulator using Android Studio
 
-Start Appium server
+🚀 Launch Appium Server
 
-Run Behave tests:
+🧪 Run Tests
 
 bash
 Copy
 Edit
 behave
+📸 Screenshots
+Screenshots are saved automatically to /screenshots/ when a test is executed
 
-Appium setup instructions are [here](https://docs.google.com/document/d/1d8uaQW4R4MPP1XMDiUH8B3VjzgDYQo1oAkQ_oeS4qwk/edit#).
+📌 Notes
+Appium sessions are managed dynamically before each scenario
+
+Elements are designed to be flexible and reusable across screens
+
+The Wikipedia app was used for educational automation testing purposes only
