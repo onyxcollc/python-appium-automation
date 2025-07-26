@@ -28,6 +28,8 @@ Navigation between native screens
 Functional behavior of the search feature in Wikipedia
 
 🧪 Technologies Used
+
+
 Python
 
 Appium
