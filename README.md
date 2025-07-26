@@ -109,16 +109,6 @@ behave features/tests/wiki_search.feature
 Screenshots are saved automatically to the /screenshots/ directory after each test run.
 
 
-<h3>📽 Demo Recording</h3>
-
-<p align="center">
-  <video width="80%" controls>
-    <source src="demo/Wiki_screen_recording.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
-
-
 
 📌 Note:
 
