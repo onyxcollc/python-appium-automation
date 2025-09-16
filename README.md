@@ -47,7 +47,7 @@ Appium setup instructions are [here](https://docs.google.com/document/d/1d8uaQW4
 
 ---
 
-<details>
+
 <summary>📁 Framework Structure</summary>
 
 python-appium-automation/
@@ -132,5 +132,5 @@ Locators and actions are modular and reusable across the app
 This project is built for educational and demo purposes only
 
 🔗 Credits
-Created with ❤️ by [Your Name]
-Automation Engineer | QA Tester | Python + Appium Enthusiast
+Created with by Nicholas Olumese
+Automation Engineer 
