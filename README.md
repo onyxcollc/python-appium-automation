@@ -47,8 +47,7 @@ Appium setup instructions are [here](https://docs.google.com/document/d/1d8uaQW4
 
 ---
 
-
-<summary>📁 Framework Structure</summary>
+## 📁 Framework Structure
 
 python-appium-automation/
 │
@@ -69,15 +68,9 @@ python-appium-automation/
 ├── .gitignore # Ignore rules
 └── README.md
 
-pgsql
-Copy
-Edit
-
-</details>
-
 ---
 
-<summary>🧪 Sample Gherkin Scenario</summary>
+## 🧪 Sample Gherkin Scenario
 
 ```gherkin
 Feature: Wikipedia search functionality
@@ -87,42 +80,23 @@ Feature: Wikipedia search functionality
     When Click Search icon
     And Search for "Python (programming language)"
     Then Verify first result is "Python (programming language)"
-</details>
-▶️ How to Run the Tests
-<details> <summary>📦 Setup Instructions</summary>
+
+---
+
+## ▶️ How to Run the Tests
+📦 Setup Instructions
 🔧 Install dependencies
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
 📱 Start Android Emulator using Android Studio
-
 🚀 Launch Appium Server
-
 🧪 Run Behave Tests
 
-bash
-Copy
-Edit
-behave features/tests/wiki_search.feature
-</details>
-📸 Screenshots
+---
+
+## 📸 Screenshots
 Screenshots are saved automatically to the /screenshots/ directory after each test run.
 
 
-<h3>📽 Demo Recording</h3>
-
-<p align="center">
-  <video width="80%" controls>
-    <source src="demo/Wiki_screen_recording.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
-
-
-
-📌 Note:
+## 📌 Note:
 
 Appium sessions are managed before and after each scenario using environment.py
 
@@ -131,5 +105,5 @@ Locators and actions are modular and reusable across the app
 This project is built for educational and demo purposes only
 
 🔗 Credits
-Created with by Nicholas Olumese
+Created by Nicholas Olumese
 Automation Engineer 
