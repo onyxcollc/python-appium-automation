@@ -77,7 +77,6 @@ Edit
 
 ---
 
-<details>
 <summary>🧪 Sample Gherkin Scenario</summary>
 
 ```gherkin
