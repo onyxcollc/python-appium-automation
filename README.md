@@ -15,6 +15,9 @@ It automates **search functionality** using real and emulated devices via Androi
 The code is organized using the **Page Object Model (POM)** for reusability and scalability.  
 All UI elements are dynamically located using **Appium Inspector**, and test flows are written in **Gherkin syntax**.
 
+
+https://github.com/user-attachments/assets/7f01ef5b-38db-4e87-8530-7b608fc3831e
+
 ---
 
 ## ✅ What I Accomplished
